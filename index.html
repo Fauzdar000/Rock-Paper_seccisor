@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS GAME</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="app">
+        <h2>ROCK PAPER SCISSOR</h2>
+
+        <div class="score">
+            <p>You: <span id="user-score">0</span> | Computer: <span id="comp-score">0</span></p>
+        </div>
+
+
+        <div class="score-image">
+           <div class="">
+            <h3>user pick:</h3>
+            <img src="paper.png" alt="user pick" id="user-pick" style="display: none;">
+           </div>
+           <h1>VS</h1>
+           <div class="">
+            <h3>computer pick: </h3>     
+            <img src="paper.png" alt="computer pick" id="comp-pick" style="display: none;">
+              </div>
+
+
+        </div>
+
+        
+<div class="choices">
+    <div class="image">
+            <img src="paper.png" alt="paper" id="paper" onclick="game('paper')">
+        </div>
+        <div class="image">
+            <img src="rock.png" alt="rock" id="rock" onclick="game('rock')">
+        </div>
+        <div class="image">
+            <img src="scissors.png" alt="scissor" id="scissor" onclick="game('scissors')">
+        </div>
+    
+</div>
+
+<div class="result">
+    <p id="game-result">Make Your Move!!!</p>
+</div>
+
+<div class="reset">
+    <button onclick="reset()">Reset</button>
+</div>
+
+  <!-- <div class="score">
+            <p>You: <span id="user-score">0</span> | Computer: <span id="comp-score">0</span></p>
+        </div>
+    </div> -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
